@@ -1,0 +1,900 @@
+@import url(./reset.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,700);
+
+body,
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1171px;
+}
+
+/*nav*/
+.header-flex {
+    display: flex;
+    gap: 38px;
+    padding: 50px 0 27px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 97px;
+    height: 30px;
+}
+
+.sport-menu {
+    display: none;
+    width: 34px;
+    height: 22px;
+    background-image: url(../img/spotr-menu.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    flex-grow: 1;
+}
+
+.nav {
+    display: flex;
+    gap: 54px;
+    flex-grow: 1;
+}
+
+.nav a {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2B3541;
+    transition: text-decoration 0.4s ease-in;
+}
+
+.nav a:hover {
+    content: "";
+    text-decoration: underline;
+}
+
+.mail {
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: black;
+}
+
+.mail::before {
+    content: '';
+    background-image: url(../img/ellipse.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -37px;
+    width: 70px;
+    height: 70px;
+    z-index: -3;
+}
+
+/*hero*/
+.hero {
+    display: flex;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1171px;
+    position: relative;
+}
+
+.arrow {
+    background-image: url(../img/Arrow.svg);
+    width: 52px;
+    height: 55px;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+}
+
+.hero-title {
+    margin-bottom: 40px;
+    margin-right: 40px;
+    font-size: clamp(26px, 2vw, 48px);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: #2B3541;
+    text-transform: uppercase;
+
+}
+
+.hero-round {
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 1.25;
+}
+
+.hero-round {
+    margin-bottom: 16px;
+    font-size: 26px;
+}
+
+.hero-round span {
+    margin-left: 16px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.text-btn {
+    margin-left: 91px;
+    max-width: 297px;
+}
+
+.btn-description {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 20px 30px;
+    background-color: #FBF138;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #0f0e0e;
+    transition: color, background-color 0.2s ease-in;
+}
+
+.hero-btn:hover {
+    color: #FBF138;
+    background-color: #2B3541;
+}
+
+
+
+.hero-bg {
+    height: 100%;
+    height: clamp(493px, 50vw, 852px);
+    flex-basis: calc(40% - 20px);
+    flex-basis: 464px;
+    background: linear-gradient(90deg, #fbf138 0%, rgba(253, 249, 182, 0.45) 100%);
+    opacity: 0.2;
+}
+
+.sport-girl {
+    position: absolute;
+    right: -170px;
+    width: clamp(399px, 60vw, 996px);
+    bottom: 0;
+}
+
+/*trening-data*/
+.trening-data {}
+
+.header-trening-data {
+    display: flex;
+    margin-top: 158px;
+    margin-bottom: 38px;
+    justify-content: space-between;
+    gap: 20px;
+    line-height: 1.25;
+}
+
+.title-trening-data {
+    font-size: clamp(26px, 2vw, 40px);
+    font-weight: 700;
+    width: 356px;
+}
+
+.trening-data-data {
+    font-size: clamp(16px, 2vw, 28px);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 309px 73px 281px;
+    grid-template-areas: "a b c" "d b f" "d e f";
+    gap: 20px;
+}
+
+.card:nth-child(1) {
+    grid-area: a;
+}
+
+.card:nth-child(2) {
+    grid-area: b;
+}
+
+.card:nth-child(3) {
+    grid-area: c;
+}
+
+.card:nth-child(4) {
+    grid-area: d;
+}
+
+.card:nth-child(5) {
+    grid-area: e;
+}
+
+.card:nth-child(6) {
+    grid-area: f;
+}
+
+
+.card {
+    display: flex;
+    padding: 20px 30px;
+    flex-direction: column;
+    gap: clamp(0px, 0.5vh, 20px);
+    border: #2B3541 solid 1px;
+    transition: background 0.2s ease-in;
+}
+
+.card:hover {
+    background: linear-gradient(180deg, #fbf138 0%, rgba(253, 249, 182, 0.45) 100%);
+}
+
+.card-data {
+    flex-grow: 1;
+    text-align: right;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.card-img {
+    width: 65px;
+    height: 65px;
+}
+
+.card-img1 {
+    width: 67px;
+    height: 107px;
+}
+
+.card-img2 {
+    width: 42px;
+    height: 85px;
+}
+
+.card-img3 {
+    width: 65px;
+    height: 61px;
+}
+
+.card-img4 {
+    width: 91px;
+    height: 50px;
+}
+
+.card-img5 {
+    width: 58px;
+    height: 66px;
+}
+
+.card-description {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+/*mailing*/
+
+.mailing-wrapper {
+    margin-top: 162px;
+    padding: 80px 0;
+    height: 348px;
+    width: 100%;
+    background-color: #F3F3F3;
+}
+
+.mailing-title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form {
+    max-width: 620px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+.email {
+    flex-basis: calc(100% - 255px - 20px);
+}
+
+.placeholder {
+    margin-bottom: 10px;
+    width: 372px;
+    height: 65px;
+    background-color: white;
+}
+
+.placeholder:focus {
+    border: #FBF138 1px solid;
+}
+
+.placeholder:invalid {
+    border: #AE0303 1px solid;
+}
+
+.label {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #2B3541;
+}
+
+.label a {
+    color: rgba(43, 53, 65, 0.5);
+    text-decoration: underline;
+}
+
+.label a:hover {
+    color: #2B3541;
+}
+
+.checkbox:checked,
+.checkbox:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.checkbox:checked+.label,
+.checkbox:not(:checked)+.label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+.checkbox:checked+.label::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: calc(50% - 10px);
+    background-color: #2B3541;
+    border-radius: 2px;
+    border: 2px solid #2B3541;
+}
+
+.checkbox:checked+.label::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    transition: all .2s ease;
+    opacity: 1;
+    left: 4px;
+    top: calc(50% - 6px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/chekbox/check_box_flazhok.png);
+}
+
+.checkbox:not(:checked)+.label::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: calc(50% - 10px);
+    background-color: transparent;
+    border-radius: 2px;
+    border: 2px solid #2B3541;
+}
+
+.checkbox:checked+.label::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    transition: all .2s ease;
+    opacity: 1;
+    left: 4px;
+    top: calc(50% - 6px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/chekbox/check_box_flazhok.png);
+}
+
+.radio:checked+.label::before {
+    border-radius: 100%;
+}
+
+.button {
+    max-height: 65px;
+    padding: 20px 43px;
+    background-color: #FBF138;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color, background-color 0.2s ease-in;
+}
+
+.button:hover {
+    color: #FBF138;
+    background-color: #2B3541;
+}
+
+.info-flex {
+    margin-top: 158px;
+    margin-bottom: 170px;
+    display: flex;
+    gap: 77px;
+}
+
+.info {
+    flex-basis: calc(483px + 77px);
+}
+
+.info-title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.info-description {
+    margin-bottom: 34px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2B3541;
+}
+
+.info-button {
+    padding: 20px 51px;
+    color: #2B3541;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    background-color: #FBF138;
+    text-transform: uppercase;
+    transition: color, background-color 0.2s ease-in;
+}
+
+.info-button:hover {
+    color: #FBF138;
+    background-color: #2B3541;
+}
+
+
+.info-img {
+    height: auto;
+    width: auto;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.advantages-flex {
+    margin-bottom: 170px;
+    display: flex;
+    gap: 67px;
+}
+
+.advantages-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.25;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #2B3541;
+}
+
+.advantages-description {
+    line-height: 1.5;
+    font-size: 18px;
+    color: #2B3541;
+}
+
+.footer {
+    background-color: #F3F3F3;
+    padding-top: 56px;
+    padding-bottom: 21px;
+}
+
+.cooperait-flex {
+    display: flex;
+    justify-content: space-between;
+    color: #2B3541;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cooperait-flex a {
+    color: rgba(43, 53, 65, 0.5);
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: underline;
+}
+
+.cooperait-flex a:hover {
+    color: #2B3541;
+}
+
+.modal {
+    display: none;
+}
+
+@media (max-width: 1500px) {
+    .sport-girl {
+        right: 0px;
+    }
+}
+
+@media (max-width: 920px) {
+    .header-wrapper {
+        gap: min(2vw, 91px);
+    }
+
+    .sport-girl {
+        width: 399px;
+        height: 364px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .header-wrapper {
+        gap: 38px;
+    }
+
+    .sport-menu {
+        display: block;
+    }
+
+    .modal {
+        display: block;
+        top: -400px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin: 0 0;
+        max-width: 587px;
+        background-color: #F3F3F3;
+        padding: 29px 10px 38px 10px;
+        position: absolute;
+        box-sizing: border-box;
+        text-align: center;
+        transition: var(--tr);
+        border: black 1px solid;
+    }
+
+    .modal-menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-menu-sport {
+        width: 78px;
+        height: 24px;
+    }
+
+    .modal-close {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/sport-menu-close.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+    }
+
+    .nav._modal {
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .hero-round {
+        margin-bottom: 16px;
+        font-size: 26px;
+    }
+
+    .btn-description {
+        font-size: 16px;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 224px);
+        grid-template-areas: "a b" "c d" "e f";
+        column-gap: 10px;
+    }
+
+    .info-flex {
+        margin-top: 90px;
+        margin-bottom: 34px;
+    }
+
+    .advantages-flex {
+        margin-bottom: 76px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 43px 5px;
+        justify-content: space-between;
+    }
+
+    .advantages {
+        flex-basis: 300px;
+    }
+
+
+
+    .footer-menu {
+        display: none;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .mail-footer {
+        display: none;
+    }
+
+    .cooperait-none {
+        display: none;
+    }
+
+    .header-flex-footer-none {
+        padding: 0;
+    }
+
+    .header-flex-footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        gap: 79px;
+    }
+
+    .logo-footer {
+        width: 78px;
+        height: 25px;
+        align-self: center;
+    }
+
+    .Frontend {
+        font-size: 10px;
+        display: block;
+        align-self: center;
+        text-align: right;
+    }
+
+    .Frontend a {
+        font-size: 10px;
+    }
+
+
+}
+
+@media (max-width: 660px) {
+    .sport-girl {
+        width: 300px;
+        height: 265px;
+    }
+
+    .text-btn {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    .sport-girl {
+        display: none;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .logo {
+        width: 78px;
+        height: 24px;
+    }
+
+    .mail {
+        font-size: 14px;
+    }
+
+    .sport-girl {
+        display: none;
+    }
+
+    .hero-bg {
+        display: none;
+    }
+
+    .hero-title {
+        margin-right: 0;
+    }
+
+    .text-btn {
+        margin-left: 0px;
+    }
+
+    .hero-btn {
+        padding: 20px 69px;
+    }
+
+
+    .card-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 114px);
+        grid-template-areas: "a" "b" "c" "d" "e" "f";
+    }
+
+    .card {
+        padding: 12px 12px;
+        justify-content: flex-end;
+        gap: 12px;
+        position: relative;
+    }
+
+    .card-data {
+        font-size: 14px;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
+
+    .card-img {
+        width: 39px;
+        height: 39px;
+    }
+
+    .card-img1 {
+        width: 34px;
+        height: 53px;
+    }
+
+    .card-img2 {
+        width: 23px;
+        height: 45px;
+    }
+
+    .card-img3 {
+        width: 39px;
+        height: 37px;
+    }
+
+    .card-img4 {
+        width: 46px;
+        height: 25px;
+    }
+
+    .card-img5 {
+        width: 35px;
+        height: 40px;
+    }
+
+    .card-description {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .mailing-title {
+        margin-bottom: 38px;
+        font-size: 26px;
+    }
+
+    .placeholder {
+        margin-bottom: 8px;
+        max-width: 310px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .form {
+        flex-direction: column;
+        gap: 31px;
+    }
+
+    .info-flex {
+        margin-top: 76px;
+        margin-bottom: 57px;
+
+    }
+
+    .mailing-wrapper {
+        height: 416px;
+        margin-top: 76px;
+    }
+
+    .info-title {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+
+    .info-description {
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+
+    .info-img {
+        display: none;
+    }
+
+    .advantages-flex {
+        margin-bottom: 68px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .advantages-title {
+        margin-bottom: 16px;
+        line-height: 1.2;
+        font-size: 16px;
+    }
+
+    .advantages-description {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .mail-footer {
+        display: none;
+    }
+
+    .cooperait-none {
+        display: none;
+    }
+
+    .header-flex-footer-none {
+        padding: 0;
+    }
+
+    .header-flex-footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .logo-footer {
+        width: 78px;
+        height: 25px;
+        align-self: center;
+    }
+
+    .Frontend {
+        font-size: 10px;
+        display: block;
+        width: 173px;
+        height: 30px;
+        align-self: center;
+        text-align: right;
+    }
+
+    .Frontend a {
+        font-size: 10px;
+    }
+
+}
