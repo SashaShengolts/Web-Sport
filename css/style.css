@@ -101,7 +101,7 @@ html {
 .hero-title {
     margin-bottom: 40px;
     margin-right: 40px;
-    font-size: clamp(26px, 2vw, 48px);
+    font-size: clamp(23px, 2vw, 48px);
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: 0.03em;
@@ -123,7 +123,6 @@ html {
 
 .hero-round span {
     margin-left: 16px;
-    margin-bottom: 20px;
     display: inline-block;
 }
 
@@ -281,7 +280,7 @@ html {
 }
 
 .card-description {
-    font-size: 18px;
+    font-size: clamp(12px, 3vw, 18px);
     font-weight: 700;
     line-height: 1.25;
 }
@@ -291,7 +290,6 @@ html {
 .mailing-wrapper {
     margin-top: 162px;
     padding: 80px 0;
-    height: 348px;
     width: 100%;
     background-color: #F3F3F3;
 }
@@ -307,6 +305,7 @@ html {
     max-width: 620px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -316,6 +315,7 @@ html {
 
 .placeholder {
     margin-bottom: 10px;
+    padding-left: 19px;
     width: 372px;
     height: 65px;
     background-color: white;
@@ -640,8 +640,6 @@ html {
         flex-basis: 300px;
     }
 
-
-
     .footer-menu {
         display: none;
     }
@@ -699,6 +697,10 @@ html {
         margin-left: auto;
         margin-right: 20px;
     }
+
+    .form {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 570px) {
@@ -708,6 +710,32 @@ html {
 
     .arrow {
         display: none;
+    }
+
+    .hero-bg {
+        display: none;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-title {
+        margin-right: 0px
+    }
+
+    .text-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info-img {
+        display: none;
+    }
+
+    .info-flex {
+        text-align: center;
+        gap: 0;
     }
 
 }
@@ -840,10 +868,14 @@ html {
         display: none;
     }
 
+    .advantages {
+        flex-basis: 100px;
+    }
+
     .advantages-flex {
         margin-bottom: 68px;
         flex-direction: column;
-        gap: 40px;
+        gap: 40px;       
     }
 
     .advantages-title {

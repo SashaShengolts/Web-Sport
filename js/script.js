@@ -9,7 +9,7 @@ function closeModal() {
 }
 // Button Up
 
-window.onscroll = function () { scrollFunction() };
+/*window.onscroll = function () { scrollFunction() };
 
 const upbuttons = document.querySelectorAll(".arrow");
 
@@ -32,4 +32,4 @@ function scrollFunction() {
     } else {
         document.getElementById('btnUp').className = 'arrow';
     }
-}
+}*/
