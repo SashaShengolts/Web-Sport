@@ -355,6 +355,7 @@ html {
     position: relative;
     padding-left: 35px;
     cursor: pointer;
+    display: block;
 }
 
 .checkbox:checked+.label::before {
@@ -609,11 +610,11 @@ html {
 
     .hero-round {
         margin-bottom: 16px;
-        font-size: 26px;
+        font-size: 32px;
     }
 
     .btn-description {
-        font-size: 16px;
+        font-size: 19px;
     }
 
     .card-grid {
@@ -687,7 +688,7 @@ html {
 
 }
 
-@media (max-width: 660px) {
+@media (max-width: 670px) {
     .sport-girl {
         width: 300px;
         height: 265px;
@@ -700,6 +701,11 @@ html {
 
     .form {
         justify-content: center;
+        flex-direction: column
+    }
+
+    .button {
+        width: 372px;
     }
 }
 
@@ -723,10 +729,14 @@ html {
     .hero-title {
         margin-right: 0px
     }
+        .hero-btn {
+            width: 100%;
+        }
 
     .text-btn {
         margin-left: auto;
         margin-right: auto;
+        max-width: 100%;
     }
 
     .info-img {
@@ -739,6 +749,8 @@ html {
     }
 
 }
+
+
 
 @media (max-width: 360px) {
     .logo {
@@ -833,7 +845,7 @@ html {
 
     .placeholder {
         margin-bottom: 8px;
-        max-width: 310px;
+        width: 100%;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -841,6 +853,10 @@ html {
     .form {
         flex-direction: column;
         gap: 31px;
+    }
+
+    .button {
+        width: 100%;
     }
 
     .info-flex {
@@ -875,7 +891,7 @@ html {
     .advantages-flex {
         margin-bottom: 68px;
         flex-direction: column;
-        gap: 40px;       
+        gap: 40px;
     }
 
     .advantages-title {
@@ -928,5 +944,6 @@ html {
     .Frontend a {
         font-size: 10px;
     }
+
 
 }
