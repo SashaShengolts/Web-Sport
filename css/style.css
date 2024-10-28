@@ -729,9 +729,10 @@ html {
     .hero-title {
         margin-right: 0px
     }
-        .hero-btn {
-            width: 100%;
-        }
+
+    .hero-btn {
+        width: 100%;
+    }
 
     .text-btn {
         margin-left: auto;
@@ -750,43 +751,17 @@ html {
 
 }
 
-
-
-@media (max-width: 360px) {
-    .logo {
-        width: 78px;
-        height: 24px;
-    }
-
-    .mail {
-        font-size: 14px;
-    }
-
-    .sport-girl {
-        display: none;
-    }
-
-    .hero-bg {
-        display: none;
-    }
-
-    .hero-title {
-        margin-right: 0;
-    }
-
-    .text-btn {
-        margin-left: 0px;
-    }
-
-    .hero-btn {
-        padding: 20px 69px;
-    }
-
-
+@media (max-width: 400px) {
     .card-grid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 114px);
-        grid-template-areas: "a" "b" "c" "d" "e" "f";
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f";
     }
 
     .card {
@@ -838,6 +813,40 @@ html {
         line-height: 1.5;
     }
 
+
+}
+
+
+
+@media (max-width: 360px) {
+    .logo {
+        width: 78px;
+        height: 24px;
+    }
+
+    .mail {
+        font-size: 14px;
+    }
+
+    .sport-girl {
+        display: none;
+    }
+
+    .hero-bg {
+        display: none;
+    }
+
+    .hero-title {
+        margin-right: 0;
+    }
+
+    .text-btn {
+        margin-left: 0px;
+    }
+
+    .hero-btn {
+        padding: 20px 69px;
+    }
     .mailing-title {
         margin-bottom: 38px;
         font-size: 26px;
